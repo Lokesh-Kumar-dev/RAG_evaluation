@@ -1,0 +1,45 @@
+venv) PS C:\Users\ploke\Desktop\RAG_evaluaton> python evaluate.py                 
+ COMPLETE RAG EVALUATION
+
+[1] DECOMPOSITION EVALUATION
+
+Original: What is total revenue projected?
+Sub-Qs:
+What factors influence total revenue projections?  
+How can businesses accurately forecast total revenue?  
+What are the implications of inaccurate total revenue projections?
+
+Original: What services does laundry business offer?
+Sub-Qs:
+What types of laundry services are commonly available?  
+What additional services do laundry businesses provide?  
+How do laundry services vary by location or specialty?
+
+
+[2] RAGAS EVALUATION - 5 METRICS
+Faithfulness, Relevancy, Context Precision, Context Recall, Answer Correctness
+
+Q: What is total revenue projected?
+A: The projected total revenue for the year is approximately ₹18.94 lakh, based on monthly targets ranging from ₹52,000 in the first month to ₹2.53 lakh ...
+-> Faithfulness: 1.0 | Relevancy: 1.0 | Context Precision: 0.9 | Context Recall: 1.0 | Correctness: 1.0
+
+Q: What services does laundry business offer?
+A: The laundry business offers a range of services, including:
+
+1. **Wash-and-Fold**: General laundry service for standard items.
+2. **Wash-and-Iron**: L...
+-> Faithfulness: 1.0 | Relevancy: 1.0 | Context Precision: 0.3 | Context Recall: 0.4 | Correctness: 0.8
+
+
+[3] DEEPEVAL EVALUATION - 5 METRICS
+Faithfulness, Relevancy, Correctness, Completeness, Groundedness (for RAG, Agents, Chatbots)
+
+Q: What is total revenue projected?
+GT: Rs 18.94 lakh in Year 1
+-> Faithfulness: 0.9 | Relevancy: 0.9 | Correctness: 1 | Completeness: 1 | Groundedness: 0.8
+
+Q: What services does laundry business offer?
+GT: washing, dry cleaning, ironing, pickup delivery
+-> Faithfulness: 0.95 | Relevancy: 1 | Correctness: 0.6 | Completeness: 0.5 | Groundedness: 0.8
+
+Done! 

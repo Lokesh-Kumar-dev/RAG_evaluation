@@ -1,0 +1,4 @@
+venv/
+chroma_pdf_reader_db/
+.env
+__pycache__
